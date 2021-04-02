@@ -13,13 +13,23 @@
   </h3>
 </div>
 
-## 들어가기
-- [준비중](https://hwan02.github.io/goldev_tech-interview)
+**:book : Contents**
+1. TODO [Data Structure](#1-data-structure)
+2. TODO [Network](#2-network)
+3. TODO [Operating System](#3-operating-system)
+4. TODO [Database](#4-database)
+5. TODO [Design Pattern](#5-design-pattern)
+6. TODO [Algorithm](#6-algorithm)
+7. TODO [Java](#7-java)
+8. TODO [JavaScript](#8-javascript)
+9. TODO [Spring](#9-spring)
+10. TODO [Security](#10-security)
+11. TODO [ETC](#11-etc)
 
 ---
 
 <div align="center">
-  <strong>💰 Center 💰</strong>
+  <strong>💰 Front End Interview 💰</strong>
 </div>
 
 ---
@@ -28,7 +38,7 @@
 
 You can use Gitpod (A free online VS Code-like IDE) for contributing online. With a single click it will launch a workspace and automatically:
 
-- clone the tech-interview-handbook repo.
+- clone the goldev_tech-interview repo.
 - install the dependencies.
 - run `yarn start`.
 
