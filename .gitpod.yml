@@ -1,5 +1,5 @@
 tasks:
-  - command: gp await-port 3000 && gp preview $(gp url 3000)/tech-interview-handbook/
+  - command: gp await-port 3000 && gp preview $(gp url 3000)/goldev_tech-interview/
   - before: cd website/
     init: yarn install
     command: yarn start
