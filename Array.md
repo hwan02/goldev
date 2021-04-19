@@ -60,6 +60,14 @@ System.out.println(Arrays.toString(arr));
 - destPos : 복사해서 대상 배열에 붙여 넣기를 시작할 첫 번째 위치
 - length : src에서 dest로 자료를 복사할 요소 개수
 
+``` java
+int[] target = {1, 2, 3, 4, 5, 6};
+int[] source = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+
+System.arraycopy(source, 2, target, 0, target.length);
+for(int i : target) System.out.println(i);
+```
+
 ## 버블 정렬 
 ``` java
 Random r = new Random();
