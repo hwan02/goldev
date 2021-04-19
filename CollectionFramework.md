@@ -121,7 +121,7 @@ int element = queue.remove();
 
 
 * * *
-#Map
+# Map
 ![Map interface](https://4.bp.blogspot.com/-4FG1HxW0My4/WVjr8ftH0TI/AAAAAAAAAIA/_y876G2SqvcMF7tws-LVqSV5DhwWD943gCEwYBhgL/s1600/map-interface-1.png)
 
 >Collection interface와는 별개  
