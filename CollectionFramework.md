@@ -118,3 +118,41 @@ queue.add(2);
 // 원소 삭제
 int element = queue.remove();
 ```
+
+
+* * *
+#Map
+![Map interface](https://4.bp.blogspot.com/-4FG1HxW0My4/WVjr8ftH0TI/AAAAAAAAAIA/_y876G2SqvcMF7tws-LVqSV5DhwWD943gCEwYBhgL/s1600/map-interface-1.png)
+
+>Collection interface와는 별개  
+json 형식과 유사한 key-value 형식  
+Dictionary 자료구조  
+중복된 키 못 가지고 오직 하나의 값만 매핑 가능  
+클래스 종류: HashMap, TreeMap, LinkedHashMap  
+HashMap은 해싱테이블에 데이터 저장  
+TreeMap은 탐색트리에 저장  
+
+```java
+//Map 생성 
+Map<String, Fit> fit = new HashMap<String, Fit>();
+
+//원소 삽입
+fit.put("1", new Fit("Nabba"));
+fit.put("2", new Fit("WBC"));
+fit.put("3", new Fit("Fitness Star"));
+
+//키 값으로 원소 삭제
+fit.remove("1");
+
+//모든 원소 출력 
+System.out.println(fit);
+// {2=WBC, 3=Fitness Star}
+
+// Map을 set으로 변환 
+for(Map.Entry<String, Fit> fit: fit.entrySet()){ 
+	String key = f.getKey();
+	String val = s.getValue();
+	
+	System.out.println("key=" + key +", value=" + value);
+}
+```
