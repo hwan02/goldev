@@ -58,3 +58,63 @@ List<String> list = Arrays.asList(new String[5]);
 >자바 2부터 제공된 객체 배열 클래스. 멀티 쓰레드 프로그램에서 동기화를 지원한다.
 
 *동기화(synchronization) : 두 개의 쓰레드가 동시에 하나의 리소스에 접근할 때 순서를 맞추어서 데이터의 오류를 방지한다.*
+
+#### Stack
+>Last In First Out (LIFO) : 맨 마지막에 추가된 요소가 가장 먼저 꺼내지는 자료구조  
+이미 구현된 클래스가 제공되지만 ArrayList나 LinkedList로 구현할 수 있다.
+```java
+import java.util.ArrayList; 
+
+class Stack{
+	private ArrayList<String> stackList = new ArrayList<String>();
+	
+	public void push(String data) {
+		stackList.add(data);
+	}
+	
+	public String pop() {
+		int length = stackList.size();
+		if(length == 0) {
+			System.out.println("빈 값");
+			return null;
+		)
+		return stackList.remove(length-1);
+	}
+}
+
+public class StackTest {
+	public static void main(String[] args) {
+		Stack stack = new Stack();
+		stack.push("a");
+		stack.push("b");
+		stack.push("c");
+		
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+	}
+}
+
+c
+b
+a
+빈값 
+null
+```
+
+#### Queue
+>First In First Out (FIFO) : 먼저 저장된 자료가 먼저 꺼내지는 자료구조  
+ArrayList나 LinkedList로 구현할 수 있다.
+
+```java
+// LinkedList로 큐 생성
+Queue<Integer> queue = new LinkedList<Integer>();
+
+// 원소 삽입 
+queue.add(1);
+queue.add(2);
+
+// 원소 삭제
+int element = queue.remove();
+```
