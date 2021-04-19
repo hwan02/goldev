@@ -119,14 +119,13 @@ queue.add(2);
 int element = queue.remove();
 ```
 
-* * * 
-# Set Interface 
+## Set Interface 
 > 중복을 허용하지 않는다.  
 순거가 없다.  
 저장된 순서와 출력 순서가 다를 수 있다.  
 get(i) 메서드가 제공되지 않아서 Iterator로 대체한다.  
 
-## HashSet 
+### HashSet 
 > JDK 1.2부터 제공된 HashSet 클래스는 해시 알고리즘(hash algorithm)을 사용하여 검색 속도가 빠르다.
 내부적으로 HashMap 인스턴스를 이용하여 요소를 저장한다.  
 저장 순서를 유지해야 한다면 JDK 1.4부터 제공하는 LinkedHashSet 클래스를 사용한다.
@@ -167,7 +166,7 @@ false
 홍길동 이순신 임꺽정
 집합의 크기 : 3
 ```
-## TreeSet
+### TreeSet
 > 객체 정렬에 사용되는 클래스  
 중복 허용하지 않으면서 오름차순이나 내림차순으로 객체를 정렬한다.  
 내부적으로 이진 검색 트리로 구현(binary search tree) 
