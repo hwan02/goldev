@@ -53,3 +53,7 @@ LinkedList는 각 원소를 링크로 연결하는 이중 연결 리스트로 �
 // 배열을 List로 변경하기 
 List<String> list = Arrays.asList(new String[5]);
 ```
+
+#### Vector
+>자바 2부터 제공된 객체 배열 클래스. 멀티 쓰레드 프로그램에서 동기화를 지원한다.
+*동기화(synchronization) : 두 개의 쓰레드가 동시에 하나의 리소스에 접근할 때 순서를 맞추어서 데이터의 오류를 방지한다.*
