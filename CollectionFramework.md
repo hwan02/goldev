@@ -15,7 +15,7 @@ java.util 패키지
 > 저장되는 데이터 갯수에 따라 자동으로 크기가 변경되어 배열 대신 자주 사용 
 
 ``` java
---생성 
+//생성 
 ArrayList<String> list = new ArrayList<String>();
 
 //삽입
@@ -39,4 +39,17 @@ int index = list.indexOf("b");
 
 // 맨 뒤에서 부터 원소 찾기
 int backIndex = list.lastIndexOf("c");
+```
+
+#### LinkedList 
+> ArrayList와 비교  
+ArrayList는 빈번하게 데이터 삽입, 삭제 시 인덱스 조정을 위해 원소를 조정해야하는 작업이 필요하다.  
+LinkedList는 각 원소를 링크로 연결하는 이중 연결 리스트로 구현되어있다.  
+원소 삽입, 삭제 시 앞에 있는 원소 링크값만 변경하면 된다.  
+
+*인덱스로 원소에 접근하는 연산은 ArrayList, 삽입 및 삭제가 많으면 LinkedList를 사용한다.*
+
+```java 
+// 배열을 List로 변경하기 
+List<String> list = Arrays.asList(new String[5]);
 ```
