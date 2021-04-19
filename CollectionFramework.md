@@ -119,6 +119,82 @@ queue.add(2);
 int element = queue.remove();
 ```
 
+* * * 
+# Set Interface 
+> 중복을 허용하지 않는다.  
+순거가 없다.  
+저장된 순서와 출력 순서가 다를 수 있다.  
+get(i) 메서드가 제공되지 않아서 Iterator로 대체한다.  
+
+## HashSet 
+> JDK 1.2부터 제공된 HashSet 클래스는 해시 알고리즘(hash algorithm)을 사용하여 검색 속도가 빠르다.
+내부적으로 HashMap 인스턴스를 이용하여 요소를 저장한다.  
+저장 순서를 유지해야 한다면 JDK 1.4부터 제공하는 LinkedHashSet 클래스를 사용한다.
+
+```java
+HashSet<String> hs01 = new HashSet<String>();
+HashSet<String> hs02 = new HashSet<String>();
+
+// add() 메소드를 이용한 요소의 저장
+
+hs01.add("홍길동");
+hs01.add("이순신");
+System.out.println(hs01.add("임꺽정"));
+System.out.println(hs01.add("임꺽정")); // 중복된 요소의 저장
+
+for (String e : hs01) {
+    System.out.print(e + " ");
+}
+
+// add() 메소드를 이용한 요소의 저장
+hs02.add("임꺽정");
+hs02.add("홍길동");
+hs02.add("이순신");
+
+// iterator() 메소드를 이용한 요소의 출력
+Iterator<String> iter02 = hs02.iterator();
+while (iter02.hasNext()) {
+    System.out.print(iter02.next() + " ");
+}
+
+// size() 메소드를 이용한 요소의 총 개수
+System.out.println("집합의 크기 : " + hs02.size());
+
+//실행결과
+true
+false
+홍길동 이순신 임꺽정
+홍길동 이순신 임꺽정
+집합의 크기 : 3
+```
+## TreeSet
+> 객체 정렬에 사용되는 클래스  
+중복 허용하지 않으면서 오름차순이나 내림차순으로 객체를 정렬한다.  
+내부적으로 이진 검색 트리로 구현(binary search tree) 
+객체 비교는 Comparable, Comparator 인터페이스를 구현한다. 
+
+> Comparable : 기본 정렬 기준을 구현하는데 사용  
+Comparator : 기본 정렬 기준 외에 다른 기준으로 정렬하고자 할 때 사용  
+
+compareTo()의 반환값은 int 지만 실제로는 비교하는 두 객체가 같으면 0, 비교하는 값보다 작으면 음수, 크면 양수를 반환하도록 구현해야 한다.
+
+```java 
+public class Member implements Comparable<member> {
+    @Override
+    public int compareTo(Member member) {
+        //내림차순으로 정렬하기 위해 반환 값을 음수로 만듦
+        return (this.memberId - member.memberId) * (-1); 
+    }
+	
+public class Member implements Comparator<Member> {
+    @Override
+    public int compare(Member member1, Member member2) {
+	return (member1.memberId - member2.memberId);
+    }
+}	
+
+TreeSet<Member> treeSet = new TreeSet<Member>(new Member());
+```
 
 * * *
 # Map
