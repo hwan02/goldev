@@ -66,6 +66,13 @@ int[] source = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
 System.arraycopy(source, 2, target, 0, target.length);
 for(int i : target) System.out.println(i);
+
+8
+7
+6
+5
+4
+3
 ```
 
 ## 버블 정렬 
