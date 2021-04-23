@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{80:function(e){e.exports=JSON.parse('{"allTagsPath":"/goldev_tech-interview/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/goldev_tech-interview/blog/tags/facebook"}')}}]);
