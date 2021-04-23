@@ -13,5 +13,18 @@ module.exports = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: '⛳Algorithm',
+      items: [
+        {
+          type: 'category',
+          label: 'Baekjoon',
+          items: [
+            'algorithm/baekjoon/baekjoon9095',
+          ],
+        },
+      ],
+    },
   ],
 };

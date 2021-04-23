@@ -1,3 +1,4 @@
+```java
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -55,3 +56,4 @@ public class Backjoon9095 {
 		br.close();
 	}
 }
+```
