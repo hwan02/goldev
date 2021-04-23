@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: '기술 면접북',
-  tagline: 'Welcome',
+  tagline: '🙌 개발자 지식 & 유용한 정보',
   url: 'https://hwan02.github.io',
   baseUrl: '/goldev_tech-interview/',
   onBrokenLinks: 'throw',
