@@ -17,6 +17,7 @@ module.exports = {
       type: 'category',
       label: '⛳Algorithm',
       items: [
+        'algorithm/java-setting',
         {
           type: 'category',
           label: 'Baekjoon',
