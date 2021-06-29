@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[24],{99:function(s){s.exports=JSON.parse('{"allTagsPath":"/goldev_tech-interview/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/goldev_tech-interview/blog/tags/docusaurus"}')}}]);
